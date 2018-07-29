@@ -111,7 +111,7 @@ class FlappyBirdEnviornment(object):
 
     def save_stats(self, episode, reward, score):
         
-        algorithm = "tabular"
+        algorithm = "tabular_q_learning"
         duration = datetime.datetime.now() - self.start 
         
         if (score >= 50):
@@ -126,12 +126,19 @@ class FlappyBirdEnviornment(object):
                     "score":     score}))
         
         if (len(self.data) == 10):
-            file = open('data/stats_flappy_bird_{}.json'.format(algorithm), 'w')  
-            for item in self.data:
-                file.write(item)   
-                file.write(",")
+            file_name = 'data/stats_flappy_bird_{}.json'.format(algorithm)
+            
+            # delete the old file before saving data for this session
+            if episode == 1 and os.path.exists(file_name): os.remove(file_name)
                 
+            # open the file in append mode to add more json data
+            file = open(file_name, 'a+')  
+            for item in self.data:
+                file.write(item)  
+                file.write(",")
+            #end for
             file.close()
+            
             self.data = []
             
     def simulate(self, max_score):
