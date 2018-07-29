@@ -128,8 +128,11 @@ class FlappyBirdEnviornment(object):
         if (len(self.data) == 10):
             file = open('data/stats_flappy_bird_{}.json'.format(algorithm), 'w')  
             for item in self.data:
-                file.write(item)                
+                file.write(item)   
+                file.write(",")
+                
             file.close()
+            self.data = []
             
     def simulate(self, max_score):
         
