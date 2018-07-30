@@ -186,7 +186,7 @@ class FlappyBirdEnv(gym.Env):
         
         return np.array(return_data), reward, terminal,{}
     
-    def reset(self):
+    def reset(self,return_type=0):
         self.score = self.playerIndex = self.loopIter = 0
         self.playerx = int(self.screenwidth * 0.2)
         self.playery = int((self.screenheight - self.player_height) / 2)
@@ -217,7 +217,7 @@ class FlappyBirdEnv(gym.Env):
         #pygame.display.update()
         #self.fpsclock.tick(self.fps)
                    
-        image_data,_,_,_ = self.step(0)
+        image_data,_,_,_ = self.step(0, return_type)
 
         return image_data
 		
