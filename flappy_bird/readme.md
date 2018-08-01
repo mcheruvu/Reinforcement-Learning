@@ -37,7 +37,18 @@ Part of your your report should be a video of how your agent learns showing prog
 
 | File | Description |
 | --- | --- |
-| Flappy_Bird | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| flappy_bird_env_open_api_gym.py | Python file. Flappy Bird Environment implementation derving from GYM ENVIRONMENT object. All the algorithms implemented in this project, except tabular Q-Learning, are using this file.  |
+| flappy_bird_utils.py | Python file. Helper functions needed for flappy_bird_env_open_api_gym.py. |
+| flappy_bird_env_py_game.py | Python file. Py Game based Flappy Bird Tabular Q-Learning is using this environment. Simple implementation but unfortunately, it needs to be cleaned up. Current implemetnation takes agent as into into the environment and they need to be decoupled. However, for some readon, PyGame driven Flappy Brid works better, in Windows OS, from  Jupyter Notebook compared to Open AI Gym implementation.|
+| flappy_bird_tabular_qlearning.ipynb | Jupyter Notebook to explore the Tabular Temportal-Difference (TD) Q-Learning algorithm.|
+| flappy_bird_va_linear_regression.ipnyb | Jupyter Notebook to explore the Linear/Stochastic Graident Descent value approximation function for Q-Learning algorithm.|
+| flappy_bird_va_simple_network.ipnyb | Jupyter Notebook to explore the Simple three-layer neural network for Q-Learning algorithm.|
+| flappy_bird_va_deep_learning.ipnyb | Jupyter Notebook to explore the Deep multi-layer deep neural network for Q-Learning algorithm.|
+| flappy_bird_project_report.ipnyb | Jupyter Notebook to list project bird algorithm comparisons and related material.|
+
+| assets folder| Folder to store all the images needed for the Flappy Bird Environment.|
+| data folder| Folder to all the statistics - epsiode, duration, reward, score in JSON format needed for the final report flappy_bird_project_report.ipnyb.|
+| images folder| Folder to store all the images needed for the jupyter notebooks to render properly - equations, images, etc.|
+
 
 
