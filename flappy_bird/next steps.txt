@@ -1,0 +1,45 @@
+1. change the formulae to LaTex instead of images
+2. Add tabular SARSA
+3. Algorithms spelled out instead of images
+4. mention the tabular/grid size - hyper parameters
+5. progression of moving average - weighted sum - DP, TD to VA - feed back cycle
+
+6. Linear Regression: feature engineering - polynomial of the features and normalization, explain the RBF functionality - mimic it network style
+
+7. explain each algorithm/steps
+
+Three Layer network with two neural outputs in the output layer
+3-xxxxx(hidden RBF neurons)-UP
+3-xxxxx(hidden RBF neurons)-DOWN
+
+Linear vs. Deep Neural:
+1. Feature Engineering (RBF features) manually (by hand) 
+2. Learn the weights of the regression layer
+3. architectural differences - one network per action vs. one output layer with multiple neurons (deep neural network)
+
+Transition diagram and table of state transitions for online training
+for linear, simple and deep neural
+
+spell out the TD and weight errors for gradient descent
+
+Add a read me file or paragraph above the main cell to explain how to run the code
+
+Add more metrics in the report table: RBF and explain each algorithm details: hyper parameters, type of the algorithm, other description - state space, environment - machine/OS/processors, etc.
+
+Organize the references by: video, article, github
+proper biblograhical references - names, etc.
+
+
+Next Steps:
+
+1. Take these algorithms and try another game environment - e.g., Attari
+2. Any try this in e-commerce/marketing dataset
+
+
+Dead line: 8/2/18
+
+
+Policy Gradients PG algorithms optimize the parameters of a policy by following the gradients toward higher rewards. One popular class of PG algorithms, calledREINFORCE algorithms, was introduced back in 1992 by Ronald Williams.
+
+
+
