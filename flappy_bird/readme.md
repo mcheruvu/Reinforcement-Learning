@@ -46,7 +46,7 @@ Part of your your report should be a video of how your agent learns showing prog
 | flappy_bird_va_deep_learning.ipnyb | Jupyter Notebook to explore the Deep multi-layer deep neural network for Q-Learning algorithm.|
 | flappy_bird_project_report.ipnyb | Jupyter Notebook to list project bird algorithm comparisons and related material.|
 | assets folder| Folder to store all the images needed for the Flappy Bird Environment.|
-| data folder| Folder to all the statistics - epsiode, duration, reward, score in JSON format needed for the final report flappy_bird_project_report.ipnyb.|
+| data folder| Folder. Contains: models saved in H5 and JSON format. Also all the statistics - epsiode, duration, reward, score saved in JSON format needed for the final report flappy_bird_project_report.ipnyb.|
 | images folder| Folder to store all the images needed for the jupyter notebooks to render properly - equations, images, etc.|
 
 
