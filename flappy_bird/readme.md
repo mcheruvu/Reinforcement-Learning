@@ -23,6 +23,7 @@ The reward structure is purely based on the "Life" parameter. One possible such 
 Please use the openai gym environment for this project:
 
 https://gym.openai.com/envs/FlappyBird-v0/
+
 1.6  Submission
 
 Determine a good policy for Flappy Birds using any one or more of the following algorithms (aim to get 140 points or more!):
